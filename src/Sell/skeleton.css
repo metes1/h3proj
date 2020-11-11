@@ -1,0 +1,44 @@
+html {
+  font-size: 110%;
+}
+ol {
+  counter-reset: item;
+}
+ol li {
+  display: block;
+  border-bottom: 4px solid rgb(204, 32, 32) !important;
+}
+ol li:hover {
+  color: red !important;
+}
+ol li::before {
+  color: rgb(235, 235, 235) !important;
+  background-color: rgb(204, 32, 32) !important;
+}
+
+ol li::after {
+  color: red !important;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}

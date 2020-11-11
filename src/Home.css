@@ -1,0 +1,74 @@
+.jumbotron {
+  background-color: #f1e0e0 !important;
+  margin-bottom: 0px !important;
+}
+.p {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+.image1 {
+  height: 100px;
+  width: 100px;
+}
+.image2 {
+  width: 700px;
+  height: 400px;
+  float: left;
+  margin: 40px 0px 0px 290px;
+}
+.notbold {
+  font-weight: normal;
+}
+.cards {
+  background-color: rgb(252, 243, 240) !important;
+  float: left;
+  margin: 100px 0px 0px 340px;
+}
+.buttonz {
+  float: left;
+  margin: 40px 0px 0px 530px;
+}
+.button {
+  padding: 10px;
+}
+.sidebar {
+  width: 250px;
+  background-color: #ffffea;
+  min-height: 100vh;
+  padding: 48px 0 0;
+
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+#sidebar-wrapper {
+  min-height: 100vh !important;
+  width: 100vw;
+  margin-left: -1rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+li {
+  padding: 10px;
+}
+.link {
+  color: rgb(32, 8, 8);
+}
+.link:hover {
+  color: rgb(197, 17, 17);
+}
+.itemz {
+  color: #ff0000;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
