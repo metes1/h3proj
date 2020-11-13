@@ -3,9 +3,8 @@ import './Search.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Form, Col} from 'react-bootstrap';
 import SearchResult from './SearchResult.js';
-import SortBy from "./../SortBy.js";
 
-//makes page nav show only when theres at least one search result
+//Render page nav only when there's at least one search result
 function PageNav(props) {
   if (!props.showPageNav) {
     return null;
@@ -22,6 +21,7 @@ function PageNav(props) {
   );
 }
 
+//Render number of results text and Sort By dropdown only when there's at least one search result
 function ResultBar(props) {
   if (!props.showResultBar) {
     return null;
@@ -29,12 +29,20 @@ function ResultBar(props) {
   return (
     <div className="resultHeader">
       <p id="results">Results 1 of 1</p>
-      <SortBy />
+      <div className="SortBy">
+        <p>Sort By:</p>
+        <select className="sortBySelect">
+          <option value="no">Post: Newest to Oldest</option>
+          <option value="on">Post: Oldest to Newest</option>
+          <option value="lh">Price: Low to High</option>
+          <option value="hl">Price: High to Low</option>
+        </select>
+      </div>
     </div>
   );
 }
 
-//shows searched for: text only when a search has been made
+//Render searched for: text only when a search has been made
 function SearchedFor(props) {
   if (!props.showSearchFor) {
     return null;
@@ -57,7 +65,7 @@ function SearchedFor(props) {
   );
 }
 
-//shows when there are no results for the search
+//Render when there are no results for the search
 function NoResults() {
   return (
     <div>
@@ -67,7 +75,6 @@ function NoResults() {
 }
 
 class Search extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {pageNum: 1, results: "", showPageNav: false, showSearchFor: false,
@@ -103,6 +110,7 @@ class Search extends React.Component {
     event.preventDefault();
   }
 
+  //All the functions below change states of search inputs
   titleSearch(event) {
     this.setState({titleIn: event.target.value});
   }
