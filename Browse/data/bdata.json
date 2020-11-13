@@ -1,0 +1,50 @@
+[
+  {
+    "title": "A Beginner's Guide to the Stock Market",
+    "author": "Matthew R. Kratter",
+    "price": 9.15,
+    "image": "b1.jpg"
+  },
+  {
+    "title": "The Intelligent Investor: The Definitive Book on Value Investing",
+    "author": "Benjamin Graham",
+    "price": 20.41,
+    "image": "b2.jpg"
+  },
+  {
+    "title": "The Five Dysfunctions of a Team: A Leadership",
+    "author": "Patrick Lencioni",
+    "price": 17.54,
+    "image": "b3.jpg"
+  },
+  {
+    "title": "Introduction to Business",
+    "author": "Lawrence J. Gitman",
+    "price": 93.28,
+    "image": "b4.jpg"
+  },
+  {
+    "title": "Business Essentials (9th Edition)",
+    "author": "Ronald J. Ebert; Ricky W. Griffin",
+    "price": 40.95,
+    "image": "b5.jpg"
+  },
+  {
+    "title": "Small Business: An Entrepreneur's Plan",
+    "author": "Ron Knowles; Chris Castillo",
+    "price": 110.83,
+    "image": "b6.jpg"
+  },
+  {
+    "title": "Canadian Business and the Law",
+    "author": "Dorothy Duplessis",
+    "price": 149.95,
+    "image": "b7.jpg"
+  },
+  {
+    "title": "Business Law in Canada",
+    "author": "Richard A. Yates",
+    "price": 97.96,
+    "image": "b8.jpg"
+  }
+]

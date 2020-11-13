@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Statistics for The Behavioral and Social Sciences: A Brief Course",
+    "author": "Arthur Aron Ph.D.",
+    "price": 80.00,
+    "image": "ss1.jpg"
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "price": 15.00,
+    "image": "ss2.jpg"
+  },
+  {
+    "title": "The Shock Doctrine: The Rise of Disaster",
+    "author": "Naomi Klein",
+    "price": 10.00,
+    "image": "ss3.jpg"
+  },
+  {
+    "title": "Mental Health Social Work Practice in Canada",
+    "author": "Cheryl Regehr",
+    "price": 62.00,
+    "image": "ss4.jpg"
+  },
+  {
+    "title": "Psychology: Themes and Variations",
+    "author": "Wayne Weiten; Doug McCann",
+    "price": 99.00,
+    "image": "ss5.jpg"
+  },
+  {
+    "title": "Psychology: Frontiers and Applications",
+    "author": "Michael W. Passer",
+    "price": 110.00,
+    "image": "ss6.jpg"
+  }
+]
