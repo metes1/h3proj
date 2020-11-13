@@ -7,7 +7,7 @@ import Search from "./Search/Search";
 import Browse from "./Browse/Browse";
 import "./Home.css";
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Navbar } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // Files contain data for browse books page
 import bdata from "./Browse/data/bdata.json";
@@ -21,10 +21,12 @@ const Home = (props) => {
   return (
     <Router>
       <div className="jumborton">
-        <Title />
         <Container fluid>
           <Row>
             <Col xs={2} id="sidebar-wrapper">
+              <Navbar className="webHeader">
+                <Navbar.Brand className="webHeader1"></Navbar.Brand>
+              </Navbar>
               <div>
                 <nav className="sidebar">
                   <ul>
@@ -80,7 +82,9 @@ const Home = (props) => {
                 </nav>
               </div>
             </Col>
-            <Col xs={10} id="page-content-wrapper">
+            <Col xs={10}>
+              <Title />
+
               <Switch>
                 <Route path="/search">
                   <Search />

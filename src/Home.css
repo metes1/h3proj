@@ -1,8 +1,6 @@
 .webHeader {
   background-color: #61000b;
-  padding: 0px !important;
-  margin: 0px !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 150px;
 }
 .headertitle {
   display: inline-block !important;
@@ -13,7 +11,6 @@
   font-weight: bold;
   color: white !important;
   padding: 0px !important;
-  margin: 0px 0px 0px 290px !important;
 }
 
 .logoClass {
@@ -27,7 +24,14 @@
 .inden {
   text-indent: 1.5em;
 }
-
+.col-10 {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.col-2 {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 .image2 {
   width: 50%;
   height: 50%;

@@ -2,17 +2,20 @@
   background-color: #f0c8c8;
 }
 .title {
-  float: left;
-  margin: 20px 0px 0px 530px;
   color: #6e0101;
   padding-bottom: 10px;
+  padding-top: 30px;
+  vertical-align: middle !important;
 }
 
 .step {
-  float: left;
-  margin: 20px 0px 0px 350px;
+  vertical-align: middle !important;
+
   color: #6e0101 !important;
   padding-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 300px;
+  padding-left: 300px;
 }
 
 .step1 {

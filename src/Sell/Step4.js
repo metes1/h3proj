@@ -20,7 +20,6 @@ const Step4 = ({ title, course, desc, author, prof }) => {
             <Form.Control type="text" placeholder={title} readOnly />
           </Col>
         </Form.Group>
-        <br></br>
         <Form.Group as={Row} controlId="exampleForm.ControlInput1">
           <Form.Label column sm={2}>
             Author
@@ -29,7 +28,6 @@ const Step4 = ({ title, course, desc, author, prof }) => {
             <Form.Control type="text" placeholder={author} readOnly />
           </Col>
         </Form.Group>
-        <br></br>
 
         <Form.Group as={Row} controlId="exampleForm.ControlInput1">
           <Form.Label column sm={2}>
@@ -39,7 +37,6 @@ const Step4 = ({ title, course, desc, author, prof }) => {
             <Form.Control type="text" placeholder={course} readOnly />
           </Col>
         </Form.Group>
-        <br></br>
 
         <Form.Group as={Row} controlId="exampleForm.ControlInput1">
           <Form.Label column sm={3}>
@@ -49,13 +46,11 @@ const Step4 = ({ title, course, desc, author, prof }) => {
             <Form.Control type="text" placeholder={prof} readOnly />
           </Col>
         </Form.Group>
-        <br></br>
 
         <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Label>Description</Form.Label>
           <Form.Control as="textarea" placeholder={desc} rows={3} readOnly />
         </Form.Group>
-        <br></br>
         <div className="button1">
           <Button variant="primary" onClick={handleShow}>
             Confirm

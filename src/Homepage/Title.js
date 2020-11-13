@@ -8,7 +8,7 @@ import React from "react";
 const Title = (props) => {
   return (
     <div>
-      <Navbar className="webHeader">
+      <Navbar className="webHeader col d-flex justify-content-center">
         <Navbar.Brand className="webHeader1">
           {" "}
           <br></br>
