@@ -1,18 +1,27 @@
-.jumbotron {
-  background-color: #f1e0e0 !important; 
-  margin-bottom: 0px !important;
-  height: 5vh !important;
+.webHeader {
+  background-color: #61000b;
+  padding: 0px !important;
+  margin: 0px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.p {
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 25px;
-  color: black;
+.webHeader1 {
+  font-size: 24px !important;
+  font-weight: bold;
+  color: white !important;
+  padding: 0px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
-.image1 {
-  height: 15vh;
-  width: 30%;
+
+.logoClass {
+  height: 8%;
+  width: 8%;
+  padding: 0px !important;
+  margin: 0px !important;
+  vertical-align: middle !important;
 }
+
 .image2 {
   width: 700px;
   height: 400px;
