@@ -24,29 +24,35 @@
   vertical-align: middle !important;
 }
 
+.inden {
+  text-indent: 1.5em;
+}
+
 .image2 {
   width: 50%;
   height: 50%;
-  float: left;
-  margin: 40px 0px 0px 290px;
+  padding-top: 20px;
+  vertical-align: middle !important;
 }
 .notbold {
   font-weight: normal;
 }
 .cards {
   background-color: rgb(252, 243, 240) !important;
-  float: left;
-  margin: 50px 0px 0px 290px;
+}
+.cardcen {
+  padding-top: 30px;
+  vertical-align: middle !important;
 }
 .buttonz {
-  float: left;
-  margin: 40px 0px 0px 470px;
+  padding-top: 30px;
+  vertical-align: middle !important;
 }
 .button {
   padding: 10px;
 }
 .sidebar {
-  width: 250px;
+  height: 130vh;
   background-color: #ffffea;
   min-height: 100vh;
   padding: 48px 0 0;

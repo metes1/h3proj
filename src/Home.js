@@ -43,8 +43,8 @@ const Home = (props) => {
                         Sell
                       </Link>
                     </li>
-                    <li>Browse Subject</li>
-                    <ul>
+                    <li> Browse Subject</li>
+                    <div className="inden">
                       <li>
                         <Link to="/browse/business" className="link">
                           Business
@@ -75,7 +75,7 @@ const Home = (props) => {
                           Social Science
                         </Link>
                       </li>
-                    </ul>
+                    </div>
                   </ul>
                 </nav>
               </div>
@@ -108,7 +108,7 @@ const Home = (props) => {
                 </Route>
                 <Route path="/">
                   <div>
-                    <Image className="image2" src={book} />
+                    <img alt="" src={book} className="image2" />
                   </div>
                   <div style={{ clear: "both" }} className="buttonz">
                     <Link to="/search" className="link">
@@ -123,7 +123,9 @@ const Home = (props) => {
                       </Button>
                     </Link>
                   </div>
-                  <Card1 />
+                  <div>
+                    <Card1 />
+                  </div>
                 </Route>
               </Switch>
             </Col>

@@ -4,8 +4,8 @@ import { Card } from "react-bootstrap";
 
 const Card1 = (props) => {
   return (
-    <div style={{ clear: "both" }}>
-      <Card style={{ width: "38rem" }} className="cards">
+    <div className=" cardcen col d-flex justify-content-center">
+      <Card style={{ width: "38rem" }} className="cards ">
         <Card.Body>
           <Card.Title>
             <h3> Who are we ? </h3>
