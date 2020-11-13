@@ -1,0 +1,56 @@
+[
+  {
+    "title": "The Study of Language",
+    "author": "George Yule",
+    "price": 20.00,
+    "image": "h1.jpg"
+  },
+  {
+    "title": "Writing Systems: A Linguistic Approach",
+    "author": "Henry Rogers",
+    "price": 40.00,
+    "image": "h2.jpg"
+  },
+  {
+    "title": "They Say / I Say",
+    "author": "Cathy Birkenstein; Gerald Graff",
+    "price": 15.00,
+    "image": "h3.jpg"
+  },
+  {
+    "title": "The Principles of Natural and Politic Law",
+    "author": " Jean-Jacques Burlamaqui",
+    "price": 46.00,
+    "image": "h4.jpg"
+  },
+  {
+    "title": "Collins Robert French Dictionary",
+    "author": "Collins Dictionaries",
+    "price": 7.00,
+    "image": "h5.jpg"
+  },
+  {
+    "title": "Beyond Media Borders, Volume 2",
+    "author": "Lars Elleström",
+    "price": 83.00,
+    "image": "h6.jpg"
+  },
+  {
+    "title": "Playing and Learning in Early Childhood Education",
+    "author": "Beverlie Dietze; Diane Kashin",
+    "price": 70.00,
+    "image": "h7.jpg"
+  },
+  {
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "price": 5.00,
+    "image": "h8.jpg"
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "price": 10.00,
+    "image": "h9.jpg"
+  }
+]

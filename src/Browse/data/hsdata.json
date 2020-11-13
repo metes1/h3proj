@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Mathematics for Health Sciences",
+    "author": "Lee Kugathasan Saunders",
+    "price": 100.00,
+    "image": "hs1.jpg"
+  },
+  {
+    "title": "Burton's Microbiology For The Health Sciences",
+    "author": "Paul Engelkirk",
+    "price": 58.00,
+    "image": "hs2.jpg"
+  },
+  {
+    "title": "Physical Examination and Health Assessment",
+    "author": "Carolyn Jarvis PhD",
+    "price": 130.00,
+    "image": "hs3.jpg"
+  },
+  {
+    "title": "Guyton and Hall Textbook of Medical Physiology",
+    "author": "John E. Hall PhD",
+    "price": 120.00,
+    "image": "hs4.jpg"
+  },
+  {
+    "title": "Medical Statistics: A Textbook for the Health Sciences",
+    "author": "Michael J. Campbell",
+    "price": 32.00,
+    "image": "hs5.jpg"
+  },
+  {
+    "title": "CURRENT Medical Diagnosis and Treatment 2020",
+    "author": "Maxine Papadakis",
+    "price": 94.00,
+    "image": "hs6.jpg"
+  },
+  {
+    "title": "Anatomy Coloring Book",
+    "author": "Stephanie McCann; Eric Wise",
+    "price": 23.00,
+    "image": "hs7.jpg"
+  }
+]
