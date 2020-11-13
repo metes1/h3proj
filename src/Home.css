@@ -4,14 +4,16 @@
   margin: 0px !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.headertitle {
+  display: inline-block !important;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
+}
 
 .webHeader1 {
-  font-size: 24px !important;
   font-weight: bold;
   color: white !important;
   padding: 0px !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
+  margin: 0px 0px 0px 290px !important;
 }
 
 .logoClass {
@@ -23,8 +25,8 @@
 }
 
 .image2 {
-  width: 700px;
-  height: 400px;
+  width: 50%;
+  height: 50%;
   float: left;
   margin: 40px 0px 0px 290px;
 }
@@ -34,11 +36,11 @@
 .cards {
   background-color: rgb(252, 243, 240) !important;
   float: left;
-  margin: 100px 0px 0px 340px;
+  margin: 50px 0px 0px 290px;
 }
 .buttonz {
   float: left;
-  margin: 40px 0px 0px 530px;
+  margin: 40px 0px 0px 470px;
 }
 .button {
   padding: 10px;

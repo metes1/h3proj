@@ -19,14 +19,14 @@ class Browse extends React.Component {
 
   //sorts the list of books based on the selected sort by option
   sortList(list) {
-    if (this.state.sortTerm == "no") { //sort by newest to oldest post
+    if (this.state.sortTerm === "no") { //sort by newest to oldest post
       return list;
-    } else if (this.state.sortTerm == "on") { //sort by oldest to newest post
+    } else if (this.state.sortTerm === "on") { //sort by oldest to newest post
       return list.reverse();
-    } else if (this.state.sortTerm == "lh") { //sort by lowest to highest price
+    } else if (this.state.sortTerm === "lh") { //sort by lowest to highest price
       let sortedList = [...list].sort((a, b) => (a.price > b.price) ? 1 : -1);
       return sortedList;
-    } else if (this.state.sortTerm == "hl") { //sort by highest to lowest price
+    } else if (this.state.sortTerm === "hl") { //sort by highest to lowest price
       let sortedList = [...list].sort((a, b) => (a.price < b.price) ? 1 : -1);
       return sortedList;
     }

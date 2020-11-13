@@ -16,7 +16,6 @@ import sdata from "./Browse/data/sdata.json";
 import hdata from "./Browse/data/hdata.json";
 import ssdata from "./Browse/data/ssdata.json";
 import hsdata from "./Browse/data/hsdata.json";
-    
 
 const Home = (props) => {
   return (
@@ -87,22 +86,22 @@ const Home = (props) => {
                   <Search />
                 </Route>
                 <Route path="/browse/business">
-                  <Browse subject="Business" file={bdata}/>
+                  <Browse subject="Business" file={bdata} />
                 </Route>
                 <Route path="/browse/engineering">
-                  <Browse subject="Engineering" file={edata}/>
+                  <Browse subject="Engineering" file={edata} />
                 </Route>
                 <Route path="/browse/science">
-                  <Browse subject="Science" file={sdata}/>
+                  <Browse subject="Science" file={sdata} />
                 </Route>
                 <Route path="/browse/healthscience">
-                  <Browse subject="Health Science" file={hsdata}/>
+                  <Browse subject="Health Science" file={hsdata} />
                 </Route>
                 <Route path="/browse/humanities">
-                  <Browse subject="Humanities" file={hdata}/>
+                  <Browse subject="Humanities" file={hdata} />
                 </Route>
                 <Route path="/browse/socialscience">
-                  <Browse subject="Social Science" file={ssdata}/>
+                  <Browse subject="Social Science" file={ssdata} />
                 </Route>
                 <Route path="/sell">
                   <Sell />
@@ -113,13 +112,13 @@ const Home = (props) => {
                   </div>
                   <div style={{ clear: "both" }} className="buttonz">
                     <Link to="/search" className="link">
-                      <Button variant="warning" size="lg">
+                      <Button variant="warning" size="md">
                         <h3>&nbsp; Buy &nbsp;</h3>
                       </Button>
                     </Link>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Link to="/sell" className="link">
-                      <Button variant="warning" size="lg">
+                      <Button variant="warning" size="md">
                         <h3>&nbsp; Sell &nbsp;</h3>
                       </Button>
                     </Link>
