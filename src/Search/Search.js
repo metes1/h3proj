@@ -187,16 +187,18 @@ class Search extends React.Component {
           <p id="searchInfo">Please enter at least one of Title, Author, Course, or Professor.</p>
         </div>
 
-        <SearchedFor editSearch={this.editSearch.bind(this)} showSearchFor={this.state.showSearchFor}
-                     titleS={this.state.titleS} authorS={this.state.authorS}
-                     courseS={this.state.courseS} profS={this.state.profS} />
+        <div className="resultsMain">
+          <SearchedFor editSearch={this.editSearch.bind(this)} showSearchFor={this.state.showSearchFor}
+                       titleS={this.state.titleS} authorS={this.state.authorS}
+                       courseS={this.state.courseS} profS={this.state.profS} />
         
-        <ResultBar showResultBar={this.state.showPageNav} />
+          <ResultBar showResultBar={this.state.showPageNav} />
 
-        <div className="resultsBody">
-          {renderResults}
+          <div className="resultsBody">
+            {renderResults}
+          </div>
+          <PageNav showPageNav={this.state.showPageNav} />
         </div>
-        <PageNav showPageNav={this.state.showPageNav} />
       </div>
     );
   }

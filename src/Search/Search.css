@@ -1,7 +1,5 @@
 .Search {
   padding: 30px;
-  /*background-color: #eae2e0;*/
-  background-color: white;
   text-align: left;
 }
 
@@ -52,6 +50,11 @@
   margin-top: 0px;
 }
 
+.Search .resultsMain {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .Search .resultHeader {
   width: 100%;
   display: flex;
@@ -61,7 +64,7 @@
   padding-bottom: 10px;
 }
 
-.Search. resultHeader #results {
+.Search .resultHeader #results {
   margin-right: auto;
 }
 

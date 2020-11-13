@@ -1,7 +1,8 @@
 .webHeader {
   background-color: #61000b;
-  height: 150px;
+  height: 100px;
 }
+
 .headertitle {
   display: inline-block !important;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
@@ -24,14 +25,19 @@
 .inden {
   text-indent: 1.5em;
 }
+
 .col-10 {
   padding-right: 0px !important;
   padding-left: 0px !important;
+  margin: 0px !important;
 }
+
 .col-2 {
   padding-right: 0px !important;
   padding-left: 0px !important;
+  margin: 0px !important;
 }
+
 .image2 {
   width: 50%;
   height: 50%;
@@ -56,16 +62,15 @@
   padding: 10px;
 }
 .sidebar {
-  height: 130vh;
+  position: fixed;
+  height: 100vh;
   background-color: #ffffea;
-  min-height: 100vh;
-  padding: 48px 0 0;
-
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 0 0;
 }
 #sidebar-wrapper {
+  background-color: #ffffea;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
   min-height: 100vh !important;
-  width: 100vw;
   margin-left: -1rem;
   -webkit-transition: margin 0.25s ease-out;
   -moz-transition: margin 0.25s ease-out;
@@ -85,6 +90,7 @@ li {
 .link:hover {
   color: rgb(197, 17, 17);
 }
+
 .itemz {
   color: #ff0000;
 }

@@ -8,15 +8,15 @@ const Card1 = (props) => {
       <Card style={{ width: "38rem" }} className="cards ">
         <Card.Body>
           <Card.Title>
-            <h3> Who are we ? </h3>
+            <h4> Who are we ? </h4>
           </Card.Title>
 
           <Card.Text>
-            <h5 className="notbold">
+            <h6 className="notbold">
               We are an online used book store based at McMaster University. We
               help facilitate the buying and selling of books at a reasonable
               price for students.
-            </h5>
+            </h6>
           </Card.Text>
         </Card.Body>
       </Card>

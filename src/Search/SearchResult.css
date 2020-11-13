@@ -1,4 +1,6 @@
 .SearchResult {
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   background-color: white;
   border: 1px solid #ddd;
