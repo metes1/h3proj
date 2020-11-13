@@ -2,31 +2,36 @@ import React from 'react';
 import "./Browse.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Card} from 'react-bootstrap';
-import SortBy from "./../SortBy.js";
 
 class Browse extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {list: props.file, sort_term: ""};
+    //keeps track of what the sort by selected option is
+    this.state = {sortTerm: "no"};
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.file !== prevProps.file) {
-      this.setState({list: this.props.file, sort_term:"no"});
+  //changes state of sortTerm when user selects a different sort by option
+  handleSorting = (e) => {
+    var option = e.target.value;
+    this.setState({sortTerm: option});    
+  }
+
+  //sorts the list of books based on the selected sort by option
+  sortList(list) {
+    if (this.state.sortTerm == "no") { //sort by newest to oldest post
+      return list;
+    } else if (this.state.sortTerm == "on") { //sort by oldest to newest post
+      return list.reverse();
+    } else if (this.state.sortTerm == "lh") { //sort by lowest to highest price
+      let sortedList = [...list].sort((a, b) => (a.price > b.price) ? 1 : -1);
+      return sortedList;
+    } else if (this.state.sortTerm == "hl") { //sort by highest to lowest price
+      let sortedList = [...list].sort((a, b) => (a.price < b.price) ? 1 : -1);
+      return sortedList;
     }
   }
-
-  handleSorting = (e) => {
-    let option = e.target.value;
-    let sortedList = [...this.state.list].sort((a, b) => {
-      return (option == "hl" ? (a["price"] >= b["price"] ? -1 : 1) :
-        (a["price"] <= b["price"] ? -1 : 1))
-    });
-    this.setState({list: sortedList, sort_term: "price"});
-  }
   
-
   render(){
     return (
       <div className="Browse">
@@ -37,17 +42,16 @@ class Browse extends React.Component {
           <div className="SortBy">
             <p>Sort By:</p>
             <select onChange={this.handleSorting} className="sortBySelect">
-              <option value="" selected disabled hidden></option>
-              <option value="lh">Price: Low to High</option>
-              <option value="hl">Price: High to Low</option>
               <option value="no">Post: Newest to Oldest</option>
               <option value="on">Post: Oldest to Newest</option>
+              <option value="lh">Price: Low to High</option>
+              <option value="hl">Price: High to Low</option>
             </select>
           </div>
         </div>
 
         <div className="browseBody">
-          {this.state.list
+          {this.sortList(this.props.file)
             .map(({title,author,price,image}) => 
               <Card className="card" key={image}>
                 <Card.Img className="bookImg" variant="top" src= {"/browseImages/" + image}/>
