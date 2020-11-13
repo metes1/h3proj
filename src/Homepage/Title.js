@@ -1,4 +1,5 @@
-import Jumbotron from "react-bootstrap/Jumbotron";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Navbar} from 'react-bootstrap';
 import logo from "../logo1.png";
 
 import "../Home.css";
@@ -8,23 +9,25 @@ import { Container, Row, Col } from "react-bootstrap";
 const Title = (props) => {
   return (
     <div>
-      {" "}
-      <Jumbotron>
-        <Container>
-          <Row>
-            <Col>
-              <img className="image1" src={logo} />
-            </Col>
-            <Col>
-              <h1 className="p">McMaster Book Scholar</h1>
-            </Col>
-            <Col>
-              <img className="image1" src={logo} />
-            </Col>
-          </Row>
-        </Container>
-      </Jumbotron>
+      <Navbar className="webHeader">
+        <Navbar.Brand className="webHeader1">
+          <img
+            alt=""
+            src={logo}
+            className="logoClass"
+          />{' '}
+          McMaster Book Scholar
+          {' '}
+          <img
+            alt=""
+            src={logo}
+            className="logoClass"
+          />
+        </Navbar.Brand>
+      </Navbar>
+     
     </div>
   );
 };
+
 export default Title;
