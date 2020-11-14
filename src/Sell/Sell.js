@@ -21,81 +21,88 @@ const Sell = (props) => {
   const steps = [
     {
       component: (
-        <Container className="step1">
-          <h4>Input Book Title and Author</h4>
-          <br></br>
-          <Form>
-            <Form.Group controlId="formGroupEmail">
-              <Form.Label>Book Title</Form.Label>
-              <Form.Control
-                type="title"
-                onChange={(e) => setTitle(e.target.value)}
-                value={title}
-                placeholder="Enter title"
-              />
-            </Form.Group>
-            <Form.Group controlId="formGroupPassword">
-              <Form.Label>Author</Form.Label>
-              <Form.Control
-                onChange={(e) => setAuthor(e.target.value)}
-                value={author}
-                type="author"
-                placeholder="Enter author"
-              />
-            </Form.Group>
-          </Form>
-        </Container>
+        <div className="step">
+          <Container className="step1">
+            <h4>Input Book Title and Author</h4>
+            <br></br>
+            <Form>
+              <Form.Group controlId="formGroupEmail">
+                <Form.Label>Book Title</Form.Label>
+                <Form.Control
+                  type="title"
+                  onChange={(e) => setTitle(e.target.value)}
+                  value={title}
+                  placeholder="Enter title"
+                />
+              </Form.Group>
+              <Form.Group controlId="formGroupPassword">
+                <Form.Label>Author</Form.Label>
+                <Form.Control
+                  onChange={(e) => setAuthor(e.target.value)}
+                  value={author}
+                  type="author"
+                  placeholder="Enter author"
+                />
+              </Form.Group>
+            </Form>
+          </Container>
+        </div>
       ),
     },
     {
       component: (
-        <Container className="step1">
-          <h4>Input Course and/or Professor</h4>
-          <br></br>
-          <Form>
-            <Form.Group controlId="formGroupEmail">
-              <Form.Label>Course</Form.Label>
-              <Form.Control
-                type="title"
-                onChange={(e) => setCourse(e.target.value)}
-                value={course}
-                placeholder="Enter course ex.. CompSci 1XA3"
-              />
-            </Form.Group>
-            <Form.Group controlId="formGroupPassword">
-              <Form.Label>Professor</Form.Label>
-              <Form.Control
-                type="author"
-                onChange={(e) => setProf(e.target.value)}
-                value={prof}
-                placeholder="Enter professor"
-              />
-            </Form.Group>
-          </Form>
-        </Container>
+        <div className="step">
+          <Container className="step1">
+            <h4>Input Course and/or Professor</h4>
+            <br></br>
+            <Form>
+              <Form.Group controlId="formGroupEmail">
+                <Form.Label>Course</Form.Label>
+                <Form.Control
+                  type="title"
+                  onChange={(e) => setCourse(e.target.value)}
+                  value={course}
+                  placeholder="Enter course ex.. CompSci 1XA3"
+                />
+              </Form.Group>
+              <Form.Group controlId="formGroupPassword">
+                <Form.Label>Professor</Form.Label>
+                <Form.Control
+                  type="author"
+                  onChange={(e) => setProf(e.target.value)}
+                  value={prof}
+                  placeholder="Enter professor"
+                />
+              </Form.Group>
+            </Form>
+          </Container>
+        </div>
       ),
     },
     {
       component: (
-        <Container className="step1">
-          <h4>Enter Book Description</h4>
-          <br></br>
-          <Form>
-            <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Description</Form.Label>
-              <Form.Control
-                onChange={(e) => setDesc(e.target.value)}
-                value={desc}
-                as="textarea"
-                rows={3}
-              />
-            </Form.Group>
-          </Form>
-        </Container>
+        <div className="step">
+          <Container className="step1">
+            <h4>Enter Book Description</h4>
+            <br></br>
+            <Form>
+              <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Label>Description</Form.Label>
+                <Form.Control
+                  onChange={(e) => setDesc(e.target.value)}
+                  value={desc}
+                  as="textarea"
+                  rows={3}
+                />
+              </Form.Group>
+            </Form>
+          </Container>
+        </div>
       ),
     },
     {
       component: (
+      <div className="step">
         <Step4
           title={title}
           author={author}
@@ -103,6 +110,7 @@ const Sell = (props) => {
           prof={prof}
           desc={desc}
         />
+      </div>
       ),
     },
   ];
@@ -113,7 +121,7 @@ const Sell = (props) => {
       </div>
       <div style={{ clear: "both" }}>
         <hr></hr>
-        <div className="step">
+        <div>
           <div>
             <MultiStep
               prevStyle={prevStyle}
