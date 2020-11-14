@@ -28,10 +28,28 @@
   padding-bottom: 8px;
 }
 
-.Search #searchInfo {
+#searchInfo {
   padding-top: 5px;
   font-size: 12px;
+  color: black;
   font-weight: normal;
+}
+
+#searchWarning {
+  padding-top: 5px;
+  font-size: 12px;
+  color: red;
+  font-weight: normal;
+  animation: false;
+  animation-name: blink;
+  animation-duration: .75s;
+  animation-iteration-count: 5;
+}
+
+@keyframes blink {
+  0%   {color: red;}
+  50% {color: white}
+  100% {color: red;}
 }
 
 .Search .searchedForText {

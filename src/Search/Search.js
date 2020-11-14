@@ -74,15 +74,30 @@ function NoResults() {
   );
 }
 
+function NoWarning() {
+  return (
+    <div>
+      <p id="searchInfo">Please enter at least one of Title, Author, Course, or Professor.</p>
+    </div>
+  );
+}
+
+function Warning() {
+  return (
+    <div>
+      <p id="searchWarning">Please enter at least one of Title, Author, Course, or Professor.</p>
+    </div>
+  );
+}
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {presults: "", showPageNav: false, showSearchFor: false,
+    this.state = {warning: false, results: "", showPageNav: false, showSearchFor: false,
                   titleIn: "", authorIn: "", courseIn: "", profIn: "",
                   titleS: "", authorS: "", courseS: "", profS: ""
                 };
   }
-
 
   searchHandler(event){
     //if search matches the one book that is in data (since this is a prototype), show the result
@@ -91,46 +106,43 @@ class Search extends React.Component {
         this.state.authorIn.toLowerCase() === "eva tardos" ||
         this.state.courseIn.toLowerCase() === "compsci 3ac3" ||
         this.state.profIn.toLowerCase() === "george karakostas") {
-      this.setState({results: "AlgBook", showPageNav: true, showSearchFor: true,
+      this.setState({warning: false, results: "AlgBook", showPageNav: true, showSearchFor: true,
                      titleIn: "", authorIn: "", courseIn: "", profIn: "",
                      titleS: this.state.titleIn, authorS: this.state.authorIn,
                      courseS: this.state.courseIn, profS: this.state.profIn});
     //if all input fields are empty, search button does nothing
     } else if (!this.state.titleIn && !this.state.authorIn && !this.state.courseIn && !this.state.profIn) {
-      this.setState({results: "", showPageNav: false, showSearchFor: false,
-                     titleIn: "", authorIn: "", courseIn: "", profIn: "",
-                     titleS: this.state.titleIn, authorS: this.state.authorIn,
-                    courseS: this.state.courseIn, profS: this.state.profIn});
+      this.setState({warning: true});
     //else any other search, there's no results found
     } else {
-      this.setState({results: "None", showPageNav: false, showSearchFor: true,
+      this.setState({warning: false, results: "None", showPageNav: false, showSearchFor: true,
                      titleIn: "", authorIn: "", courseIn: "", profIn: "",
                      titleS: this.state.titleIn, authorS: this.state.authorIn,
                      courseS: this.state.courseIn, profS: this.state.profIn});
     }
     event.preventDefault();
-  }
+  };
 
   //All the functions below change states of search inputs
   titleSearch(event) {
-    this.setState({titleIn: event.target.value});
+    this.setState({titleIn: event.target.value, warning: false});
   }
 
   authorSearch(event) {
-    this.setState({authorIn: event.target.value});
+    this.setState({authorIn: event.target.value, warning: false});
   }
 
   courseSearch(event) {
-    this.setState({courseIn: event.target.value});
+    this.setState({courseIn: event.target.value, warning: false});
   }
 
   profSearch(event) {
-    this.setState({profIn: event.target.value});
+    this.setState({profIn: event.target.value, warning: false});
   }
 
   editSearch() {
     this.setState({titleIn: this.state.titleS, authorIn: this.state.authorS,
-                   courseIn: this.state.courseS, profIn: this.state.profS,});
+                   courseIn: this.state.courseS, profIn: this.state.profS, warning: false});
   }
 
   render(){
@@ -138,6 +150,10 @@ class Search extends React.Component {
     if (this.state.results === "AlgBook") renderResults = <SearchResult />
     else if (this.state.results === "None") renderResults = <NoResults />
     else renderResults = null;
+
+    var renderWarning;
+    if (this.state.warning === false) renderWarning = <NoWarning />
+    if (this.state.warning === true) renderWarning = <Warning />
 
     return (
       <div className="Search">
@@ -185,7 +201,7 @@ class Search extends React.Component {
               </Col>
             </Form.Row>
             </Form>
-          <p id="searchInfo">Please enter at least one of Title, Author, Course, or Professor.</p>
+          {renderWarning}
         </div>
 
         <div className="resultsMain">
