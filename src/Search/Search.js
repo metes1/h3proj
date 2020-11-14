@@ -77,11 +77,12 @@ function NoResults() {
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {pageNum: 1, results: "", showPageNav: false, showSearchFor: false,
+    this.state = {presults: "", showPageNav: false, showSearchFor: false,
                   titleIn: "", authorIn: "", courseIn: "", profIn: "",
                   titleS: "", authorS: "", courseS: "", profS: ""
                 };
   }
+
 
   searchHandler(event){
     //if search matches the one book that is in data (since this is a prototype), show the result

@@ -49,11 +49,17 @@
 .notbold {
   font-weight: normal;
 }
+
+.step-progress {
+  padding-bottom: 30px;
+}
+
 .cards {
   background-color: rgb(252, 243, 240) !important;
 }
 .cardcen {
   padding-top: 30px;
+  padding-bottom: 30px;
   vertical-align: middle !important;
 }
 .buttonz {

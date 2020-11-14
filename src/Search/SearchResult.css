@@ -12,7 +12,7 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.SearchResult img {
+.SearchResult #img1 {
   width: 17%;
 }
 
@@ -58,4 +58,121 @@
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+#checkoutHeader {
+  padding: 8px !important;
+  margin: 0px !important;
+}
+
+.orderInfoBox {
+  width: 100%;
+}
+
+.checkoutBody {
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  padding-right: 1px !important;
+  padding-left: 8px !important;
+  margin: 0px !important;
+  border: 1px solid lightgrey;
+  border-right-color: white;
+  border-left-color: white;
+}
+
+.checkoutBodyH {
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  padding-right: 1px !important;
+  padding-left: 8px !important;
+  margin: 0px !important;
+  border: 0.5px solid black;
+  background-color: lightgrey;
+  border-right-color: lightgray;
+  border-left-color: lightgray;
+}
+
+.checkoutBodyT {
+  display: flex;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  padding-right: 1px !important;
+  padding-left: 8px !important;
+  margin: 0px !important;
+  border: 1px solid lightgrey;
+  border-right-color: white;
+  border-left-color: white;
+}
+
+.checkOrder {
+  display: flex;
+  margin: 0px !important;
+}
+
+#orderImg {
+  width: 10%;
+  margin-right: 10px;
+}
+
+.orderText {
+  width: 90%;
+}
+
+#orderTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+#orderAuthor {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#order1 {
+  width: 100% !important;
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgray;
+}
+
+#orderTotal {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  width:50%;
+  
+}
+
+#orderPrice {
+  width:45%;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+
+#checkoutfooter {
+  padding: 3px !important;
+  margin: 0px !important;
+}
+
+#payBtn {
+  padding: 5px;
+  margin: 0px !important;
+  font-size: 16px;
+}
+
+#cancelBtn {
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-right: 15px !important;
+}
+
+.purchaseMsg h6 {
+  color:forestgreen;
 }
