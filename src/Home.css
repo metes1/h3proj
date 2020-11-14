@@ -31,7 +31,9 @@
   padding-left: 0px !important;
   margin: 0px !important;
 }
-
+.underline {
+  border-bottom-width: 2px;
+}
 .col-2 {
   padding-right: 0px !important;
   padding-left: 0px !important;

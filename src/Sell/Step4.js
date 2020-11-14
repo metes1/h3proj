@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Col, Row, Button, Modal } from "react-bootstrap";
 import "./Sell.css";
 
-const Step4 = ({ title, course, desc, author, prof }) => {
+const Step4 = ({ title, course, desc, author, prof, price }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -18,6 +18,14 @@ const Step4 = ({ title, course, desc, author, prof }) => {
           </Form.Label>
           <Col sm={10}>
             <Form.Control type="text" placeholder={title} readOnly />
+          </Col>
+        </Form.Group>
+        <Form.Group as={Row} controlId="exampleForm.ControlInput1">
+          <Form.Label column sm={2}>
+            Price
+          </Form.Label>
+          <Col sm={10}>
+            <Form.Control type="text" placeholder={price} readOnly />
           </Col>
         </Form.Group>
         <Form.Group as={Row} controlId="exampleForm.ControlInput1">
@@ -51,8 +59,8 @@ const Step4 = ({ title, course, desc, author, prof }) => {
           <Form.Label>Description</Form.Label>
           <Form.Control as="textarea" placeholder={desc} rows={3} readOnly />
         </Form.Group>
-        <div className="button1">
-          <Button variant="primary" onClick={handleShow}>
+        <div style={{}} className="button1">
+          <Button variant="success" size="lg" onClick={handleShow}>
             Confirm
           </Button>
         </div>

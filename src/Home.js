@@ -8,7 +8,13 @@ import Browse from "./Browse/Browse";
 import "./Home.css";
 import React from "react";
 import { Container, Row, Col, Button, Navbar } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink,
+} from "react-router-dom";
 // Files contain data for browse books page
 import bdata from "./Browse/data/bdata.json";
 import edata from "./Browse/data/edata.json";
@@ -31,51 +37,88 @@ const Home = (props) => {
                 <nav className="sidebar">
                   <ul>
                     <li>
-                      <Link to="/" className="link">
+                      <NavLink
+                        to="/"
+                        exact
+                        className="link"
+                        activeStyle={{ color: "red" }}
+                      >
                         Home
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/search" className="link">
+                      <NavLink
+                        to="/search"
+                        className="link"
+                        activeStyle={{ color: "red" }}
+                      >
                         Search
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/sell" className="link">
+                      <NavLink
+                        to="/sell"
+                        className="link"
+                        activeStyle={{ color: "red" }}
+                      >
                         Sell
-                      </Link>
+                      </NavLink>
                     </li>
                     <li> Browse Subject</li>
                     <div className="inden">
                       <li>
-                        <Link to="/browse/business" className="link">
+                        <NavLink
+                          to="/browse/business"
+                          className="link"
+                          activeStyle={{ color: "red" }}
+                        >
                           Business
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link to="/browse/engineering" className="link">
+                        <NavLink
+                          to="/browse/engineering"
+                          className="link"
+                          activeStyle={{ color: "red" }}
+                        >
                           Engineering
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link to="/browse/science" className="link">
+                        <NavLink
+                          to="/browse/science"
+                          className="link"
+                          activeStyle={{ color: "red" }}
+                        >
                           Science
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link to="/browse/healthscience" className="link">
+                        <NavLink
+                          to="/browse/healthscience"
+                          className="link"
+                          activeStyle={{ color: "red" }}
+                        >
                           Health Science
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link to="/browse/humanities" className="link">
+                        <NavLink
+                          to="/browse/humanities"
+                          className="link"
+                          activeStyle={{ color: "red" }}
+                        >
                           Humanities
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link to="/browse/socialscience" className="link">
+                        <NavLink
+                          to="/browse/socialscience"
+                          className="link"
+                          activeStyle={{ color: "red" }}
+                        >
                           Social Science
-                        </Link>
+                        </NavLink>
                       </li>
                     </div>
                   </ul>
