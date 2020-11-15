@@ -2,6 +2,7 @@ import "../Home.css";
 import React from "react";
 import { Card } from "react-bootstrap";
 
+// blurb about what the webapps purpose is
 const Card1 = (props) => {
   return (
     <div className="cardcen col d-flex justify-content-center">
