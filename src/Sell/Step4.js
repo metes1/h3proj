@@ -8,6 +8,7 @@ const Step4 = ({ title, course, desc, author, prof, price }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
+    // step confirmation
     <div className="step1">
       <h4>Confirm Information</h4>
       <br></br>

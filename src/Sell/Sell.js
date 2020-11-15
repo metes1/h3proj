@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { Container, Form } from "react-bootstrap";
 import "./skeleton.css";
 
+// sell form with timeline
 const Sell = (props) => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
