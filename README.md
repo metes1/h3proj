@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# McMaster Book Scholar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+link  : https://book-scholar.herokuapp.com/sell
 
 ## Available Scripts
 
