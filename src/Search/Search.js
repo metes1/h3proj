@@ -99,26 +99,52 @@ class Search extends React.Component {
                 };
   }
 
+  //only checks match for the single book that's hard coded in
   searchHandler(event){
-    //if search matches the one book that is in data (since this is a prototype), show the result
-    if (this.state.titleIn.toLowerCase() === "algorithm design" ||
-        this.state.authorIn.toLowerCase() === "jon kleinberg" ||
-        this.state.authorIn.toLowerCase() === "eva tardos" ||
-        this.state.courseIn.toLowerCase() === "compsci 3ac3" ||
-        this.state.profIn.toLowerCase() === "george karakostas") {
-      this.setState({warning: false, results: "AlgBook", showPageNav: true, showSearchFor: true,
+    //if all input fields are empty (blank space string), search button does nothing
+    if (!this.state.titleIn.trim() && !this.state.authorIn.trim() && !this.state.courseIn.trim() && !this.state.profIn.trim()) {
+      this.setState({warning: true, titleIn: "", authorIn: "", courseIn: "", profIn: ""});
+    } else { //else check if the search inputs have any matches
+      var titleMatch;
+      var authorMatch;
+      var courseMatch;
+      var profMatch;
+
+      if (this.state.titleIn.trim()) { //only check input match if the input isn't empty (only spaces are included as a null string as well)
+        if ("algorithm design".includes(this.state.titleIn.toLowerCase())) { //
+          titleMatch = true;
+        } else {titleMatch = false;} //if input doesn't match then there will be no
+      }  else {titleMatch = true;}
+
+      if (this.state.authorIn.trim()) {
+        if ("jon kleinberg".includes(this.state.authorIn.toLowerCase()) || "eva tardos".includes(this.state.authorIn.toLowerCase())) {
+          authorMatch = true;
+        } else {authorMatch = false;}
+      } else {authorMatch = true;}
+
+      if (this.state.courseIn.trim()) {
+        if ("compsci 3ac3".includes(this.state.courseIn.toLowerCase())) {
+          courseMatch = true;
+        } else {courseMatch = false;}
+      } else {courseMatch = true;}
+
+      if (this.state.profIn.trim()) {
+        if ("george karakostas".includes(this.state.profIn.toLowerCase())) {
+          profMatch = true;
+        } else {profMatch = false;}
+      } else {profMatch = true;}
+
+      if (titleMatch && authorMatch && courseMatch && profMatch) { //All inputs must match for the result to show, empty categories are marked as true.
+        this.setState({warning: false, results: "AlgBook", showPageNav: true, showSearchFor: true,
                      titleIn: "", authorIn: "", courseIn: "", profIn: "",
-                     titleS: this.state.titleIn, authorS: this.state.authorIn,
-                     courseS: this.state.courseIn, profS: this.state.profIn});
-    //if all input fields are empty, search button does nothing
-    } else if (!this.state.titleIn && !this.state.authorIn && !this.state.courseIn && !this.state.profIn) {
-      this.setState({warning: true});
-    //else any other search, there's no results found
-    } else {
-      this.setState({warning: false, results: "None", showPageNav: false, showSearchFor: true,
+                     titleS: this.state.titleIn.trim(), authorS: this.state.authorIn.trim(),
+                     courseS: this.state.courseIn.trim(), profS: this.state.profIn.trim()});
+      } else { //No search found
+        this.setState({warning: false, results: "None", showPageNav: false, showSearchFor: true,
                      titleIn: "", authorIn: "", courseIn: "", profIn: "",
-                     titleS: this.state.titleIn, authorS: this.state.authorIn,
-                     courseS: this.state.courseIn, profS: this.state.profIn});
+                     titleS: this.state.titleIn.trim(), authorS: this.state.authorIn.trim(),
+                     courseS: this.state.courseIn.trim(), profS: this.state.profIn.trim()});
+      }
     }
     event.preventDefault();
   };
