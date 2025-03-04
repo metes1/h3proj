@@ -1,7 +1,5 @@
 # McMaster Book Scholar
 
-link  : https://book-scholar.herokuapp.com/sell
-
 ## Available Scripts
 
 In the project directory, you can run:
